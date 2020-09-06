@@ -22,22 +22,25 @@ const Games = () => {
   };
 
   const fetchTopGames = async () => {
-    const resp = await getGames();
-    setGames(resp.data.data);
+    const games = await getGames();
+    setGames(games);
   };
 
   const addSizeToImg = (url) => {
     const widthReplaced = url.replace(/{width}/, isMobile ? 300 : 400);
-    const heightReplaced = widthReplaced.replace(/{height}/, 400);
+    const heightReplaced = widthReplaced.replace(
+      /{height}/,
+      isMobile ? 440 : 600
+    );
     return heightReplaced;
   };
 
   return (
     <div className="gamesContainer">
       {games.map((game) => (
-        <div className="game">
+        <div key={game.id} className="game">
           <p>{game.name}</p>
-          <img src={addSizeToImg(game.box_art_url)} />
+          <img data-testid="artBoxUrl" src={addSizeToImg(game.box_art_url)} />
         </div>
       ))}
     </div>

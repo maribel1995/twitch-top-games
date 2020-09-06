@@ -1,8 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Roboto:bold");
+@import url("https://fonts.googleapis.com/css?family=Oxygen&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oxygen:bold");
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue:bold");
 
 body {
-  font-family: "Roboto";
+  font-family: "Oxygen";
 }
 
 .container {
@@ -20,21 +22,5 @@ body {
 
 main {
   margin: 0 auto;
-}
-
-.gamesContainer {
-  display: grid;
-  margin-top: 20px;
-  grid-template-columns: 500px 500px 500px;
-  /* grid-template-rows: 25% 100px auto; */
-}
-
-.game {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  font-size: 24px;
-  color: white;
-  line-height: 50px;
-  text-transform: uppercase;
+  margin-top: 110px;
 }

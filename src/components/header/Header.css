@@ -1,7 +1,16 @@
 .headerContainer {
   background-color: transparent;
-  color: #fff;
   height: 130px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+.headerContainerScrolled {
+  background-color: #000000;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 }
 
 .headerContent {
@@ -25,7 +34,13 @@
   height: 60px;
 }
 
+.headerLogoScrolled {
+  width: 100px;
+  height: 40px;
+}
+
 .heading {
+  font-family: "Bebas Neue";
   outline: none;
   font-size: 34px;
   width: 350px;
@@ -36,6 +51,20 @@
   margin-right: auto;
   border: 3px solid #9146ff;
   margin: 0;
+  color: #9146ff;
+  background-color: black;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+
+.headingScrolled {
+  font-family: "Bebas Neue";
+  outline: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
   color: #9146ff;
   background-color: black;
   font-weight: bold;

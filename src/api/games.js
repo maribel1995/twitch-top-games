@@ -1,6 +1,6 @@
-import Service from "./service";
+import { service } from "./service";
 
-const service = Service();
-export const getGames = () => {
-  return service.get("games/top");
+export const getGames = async () => {
+  const resp = await service.get("games/top");
+  return resp.data.data;
 };
