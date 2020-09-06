@@ -1,5 +1,7 @@
 # react-twitch-tv
 
+<img src="https://travis-ci.com/maribel1995/react-twitch-tv.svg?branch=master"/>
+
 ## Requisitos
 
 - Node v12+
@@ -14,7 +16,7 @@
   - o token estará na parte de **Generated Tokens**
   - você precisará do `ACCESS TOKEN` e do `CLIENT ID`
 
-  ## Comandos
+## Comandos
 
 - `npm install` - instalação dos módulos
 - `npm start -- --env.TOKEN=<YOUR_TOKEN> --env.CLIENT_ID=<YOUR_CLIENT_ID> --env.TWITCH_URL=https://api.twitch.tv/helix/` - rodar local

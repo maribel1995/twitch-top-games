@@ -1,5 +1,6 @@
 const webpack = require("webpack");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const path = require("path");
 
 module.exports = (env) => {
   return {
@@ -34,6 +35,12 @@ module.exports = (env) => {
           use: ["file-loader"],
         },
       ],
+    },
+    resolve: {
+      alias: {
+        components: path.resolve(__dirname, "src/components/"),
+        assets: path.resolve(__dirname, "src/assets/"),
+      },
     },
     devtool: false,
     devServer: {

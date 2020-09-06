@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import "./App.css";
+import { Header } from "./components";
 import { getGames } from "./api/games";
 
 const App = () => {
@@ -12,15 +14,32 @@ const App = () => {
     setGames(resp.data.data);
   };
 
+  const addSizeToImg = (url) => {
+    const widthReplaced = url.replace(/{width}/, 400);
+    const heightReplaced = widthReplaced.replace(/{height}/, 400);
+    return heightReplaced;
+  };
+
+  const Games = () => {
+    return <div className="gamesContainer"></div>;
+  };
+
   return (
-    <main>
-      <h1>Top Games</h1>
-      <ul>
-        {games.map((game) => (
-          <li key={game.id}>{game.name}</li>
-        ))}
-      </ul>
-    </main>
+    <div className="container">
+      <Header />
+      <main>
+        <ul>
+          {games.map((game) => (
+            <a>
+              <li key={game.id}>
+                {game.name}
+                <img src={addSizeToImg(game.box_art_url)} />
+              </li>
+            </a>
+          ))}
+        </ul>
+      </main>
+    </div>
   );
 };
 
