@@ -1,0 +1,31 @@
+.gamesContainer {
+  display: grid;
+  margin-top: 20px;
+  grid-template-columns: 500px 500px 500px;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  font-size: 24px;
+  color: white;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.game p {
+  text-align: center;
+}
+
+@media screen and (max-width: 1370px) {
+  .gamesContainer {
+    grid-template-columns: 500px 500px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .gamesContainer {
+    grid-template-columns: 100%;
+  }
+}

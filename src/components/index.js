@@ -1,4 +1,4 @@
 import { Header } from "./header";
-// import { Footer } from "./footer";
+import { Games } from "./games";
 
-export { Header };
+export { Header, Games };
