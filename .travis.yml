@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - 12
+before_script:
+  - npm install
+  - npm run build
+deploy:
+  provider: netlify
+  site: d8e1a56e-02f7-495c-b58d-e270c65f2e94
+  edge: true
+  dir: "./dist"
+  auth:
+    secure: l28GibIJAGokOdNPEnjX08zX4Wk92UsPvvakpqBalN23sYcTx26olyY3uDRbeX8M0Yb7b05L+8CbWaM+Rb5H73IC5jIY33G38BSU3f5GCpqDrLy/uFrsLxFHjELXLOWR9Pso+PSoOuaZmvsqvZLEQ0YAw8zEclSOHwyrxO20SZ/IO0r+ImCvDpxFPyaYx5eDdVkUTge90KRPIES/MReHzT0cHtBuKaToZM7mA1wT2FLzRQh3DZQOWEjL65NBgnxv2ksrSfPHa52cOjc4oBNZaXulZmI+tj9ndTuvVQ9VymQ1RVV0k+QTrtYyYWRt9x4LztkQKqXYOK+egPyvi4Mb5XbgkVtfW05XCVs7wOQAEQdo33cqmfdmnHJwtDu3qb4+hAxKWW4mQh9OMYck7Ko9bQbpYXrdpptvU2OoywM+jEfwXJ+2snQT7KoQDr9l7HdW2J1PVmG2+Aqg4VNN6ZNIGDP1y94lwQasdGsp1/7RyM2OCbmvay6fE/QuwBUcllXWnU7ZoWgBHbw8d7xlouLM1igxYHZzDJ7FoNcZvlBfNSnw0gDH/XKt0W7amzy15ekxA6usw/sNYC29bAATAGECyiWKXdpIxPrgqXIOI4wsS2izHdgeK3WbREcNco2P67F7FFuvm9Rjl1YRDR1t8z/eK+lz+hMI58vq9J/FoGQu9aw=

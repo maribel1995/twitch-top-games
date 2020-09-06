@@ -1,0 +1,56 @@
+{
+  "name": "react-twitch-tv",
+  "version": "1.0.0",
+  "description": "app-to-list-available-games",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode production --env.TWITCH_URL=$TWITCH_URL --env.TOKEN=$TOKEN --env.CLIENT_ID=$CLIENT_ID",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maribel1995/react-twitch-tv.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maribel1995/react-twitch-tv/issues"
+  },
+  "homepage": "https://github.com/maribel1995/react-twitch-tv#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "@testing-library/dom": "^7.24.1",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.0.2",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.6.0",
+    "eslint": "^7.2.0",
+    "eslint-plugin-react": "^7.20.0",
+    "file-loader": "^6.0.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "jest": "^26.0.1",
+    "source-map-loader": "^1.0.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "core-js": "^3.6.5",
+    "dotenv-webpack": "^2.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css)$": "<rootDir>/__mocks__/styleMock.js"
+    }
+  }
+}
