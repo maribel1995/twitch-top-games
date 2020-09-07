@@ -5,6 +5,7 @@ before_script:
   - npm install
   - npm run build
   - mv ./_redirects ./dist/
+
 deploy:
   provider: netlify
   site: d8e1a56e-02f7-495c-b58d-e270c65f2e94
