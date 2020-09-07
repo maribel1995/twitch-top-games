@@ -12,8 +12,8 @@ export const addSizeToImg = (url, isMobile, page) => {
     },
     streams: {
       mobile: {
-        width: 400,
-        height: 200,
+        width: 200,
+        height: 300,
       },
       desktop: {
         width: 200,

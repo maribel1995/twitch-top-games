@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { getGames } from "api/games";
 import { addSizeToImg } from "utils/addSizeToImg";
 
@@ -18,7 +18,7 @@ const Games = ({ isMobile }) => {
   return (
     <div className="gamesContainer">
       {games.map((game) => (
-        <Link key={game.id} to={`streams/${game.id}`}>
+        <NavLink key={game.id} to={`streams/${game.id}`}>
           <div className="game">
             <p>{game.name}</p>
             <img
@@ -26,7 +26,7 @@ const Games = ({ isMobile }) => {
               src={addSizeToImg(game.box_art_url, isMobile, "topGames")}
             />
           </div>
-        </Link>
+        </NavLink>
       ))}
     </div>
   );

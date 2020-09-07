@@ -11,7 +11,7 @@ test("adding mobile size to topGames", () => {
 
 test("adding mobile size to streams", () => {
   expect(addSizeToImg(url, true, "streams")).toBe(
-    "https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends-400x200.jpg"
+    "https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends-200x300.jpg"
   );
 });
 
