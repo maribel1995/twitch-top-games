@@ -6,6 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production --env.TWITCH_URL=$TWITCH_URL --env.TOKEN=$TOKEN --env.CLIENT_ID=$CLIENT_ID",
+    "cypress:open": "cypress open",
     "test": "jest"
   },
   "repository": {
@@ -44,6 +45,7 @@
   "dependencies": {
     "axios": "^0.20.0",
     "core-js": "^3.6.5",
+    "cypress": "^5.1.0",
     "dotenv-webpack": "^2.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
