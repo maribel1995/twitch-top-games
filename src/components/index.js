@@ -1,3 +1,3 @@
 import { Header } from "./header";
-
-export { Header };
+import { FakeCard } from "./fakeCard";
+export { Header, FakeCard };
