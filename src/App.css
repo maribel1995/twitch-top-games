@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Oxygen&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Oxygen:bold");
 @import url("https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Bebas+Neue:bold");
 
 body {
   font-family: "Oxygen";
@@ -17,6 +16,7 @@ body {
   background-image: url("./assets/dot-background.svg");
   background-repeat: repeat;
   background-size: 40px;
+  background-attachment: fixed;
   background-position: -20px -20px;
 }
 
