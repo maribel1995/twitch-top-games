@@ -7,6 +7,7 @@ import { FakeCard } from "components/fakeCard";
 const Games = ({ isMobile }) => {
   const [games, setGames] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
     fetchTopGames();
   }, []);
