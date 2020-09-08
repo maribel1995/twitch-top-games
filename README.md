@@ -1,10 +1,22 @@
-# react-twitch-tv
+# Twitch Top Games
 
-<img src="https://travis-ci.com/maribel1995/react-twitch-tv.svg?branch=master"/>
+<img src="https://travis-ci.com/maribel1995/twitch-top-games.svg?branch=master"/>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d8e1a56e-02f7-495c-b58d-e270c65f2e94/deploy-status)](https://app.netlify.com/sites/twitch-top-games/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/efa5d045-b8f9-433a-b981-aca000f9d9a2/deploy-status)](https://app.netlify.com/sites/twitch-top-games/deploys)
 
 https://twitch-top-games.netlify.app/
+
+## Tecnologias
+
+- Node
+- React
+- Webpack
+- Jest
+- Cypress
+- Testing Library
+- Travis
+- Netlify
+- Mock Service Worker
 
 ## Requisitos
 
