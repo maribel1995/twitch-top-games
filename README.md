@@ -2,7 +2,7 @@
 
 <img src="https://travis-ci.com/maribel1995/twitch-top-games.svg?branch=master"/>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/efa5d045-b8f9-433a-b981-aca000f9d9a2/deploy-status)](https://app.netlify.com/sites/twitch-top-games/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/51c11949-1231-46c3-8759-8441a761f012/deploy-status)](https://app.netlify.com/sites/twitch-top-games/deploys)
 
 https://twitch-top-games.netlify.app/
 
