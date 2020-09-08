@@ -2,6 +2,10 @@
 
 <img src="https://travis-ci.com/maribel1995/react-twitch-tv.svg?branch=master"/>
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d8e1a56e-02f7-495c-b58d-e270c65f2e94/deploy-status)](https://app.netlify.com/sites/twitch-top-games/deploys)
+
+https://twitch-top-games.netlify.app/
+
 ## Requisitos
 
 - Node v12+

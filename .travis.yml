@@ -7,7 +7,7 @@ before_script:
   - mv ./_redirects ./dist/
 
 deploy:
-  provider: netlify --prod
+  provider: netlify
   site: efa5d045-b8f9-433a-b981-aca000f9d9a2
   edge: true
   dir: "./dist"
