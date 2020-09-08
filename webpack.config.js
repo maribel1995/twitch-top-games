@@ -54,6 +54,7 @@ module.exports = (env) => {
       new HtmlWebPackPlugin({
         template: "./public/index.html",
         filename: "./index.html",
+        favicon: "./src/assets/favicon.png",
       }),
       new webpack.SourceMapDevToolPlugin({}),
       new webpack.DefinePlugin({
